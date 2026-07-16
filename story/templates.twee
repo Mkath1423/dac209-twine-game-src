@@ -3,7 +3,6 @@ templates
 
 
 :: Templates1
-
 <template id="ink-bottle-template">
     <div class="ink-bottle-layers">
         <img class="ink-bottle" src="assets/inkbottle.png" alt="ink!">
@@ -11,3 +10,33 @@ templates
         <img class="ink-bottle-cap" src="assets/inkbottle-cap.png" alt="ink!">
     </div>
 </template>
+
+:: story-wrapper
+
+<div id=site>
+      <div id=left-sidebar class="debug">
+
+      </div>
+
+          <div id=twine-area class="debug">
+
+              <div id="wrapper-outer">
+                    <div id="wrapper-inner">
+                    </div>
+              </div>
+          
+          </div>
+
+          <div id=drawing-area class="debug">
+              <canvas id="drawing-canvas"></canvas>
+          </div>
+
+      
+      <div id=right-sidebar class="sidebar">
+        <div class="menu-header">Stamps</div>
+        <hr>
+        <div class="menu-header">Stamps</div>
+        <hr>
+      </div>
+      
+  </div>

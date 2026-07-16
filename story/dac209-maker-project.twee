@@ -34,46 +34,13 @@ dac209-maker-project
 :: Untitled Passage {"position":"800,325","size":"100,100"}
 This is the opening passage :)
 
-[[story-wrapper]]
+[[P2]]
 
 
-:: story-wrapper {"position":"925,325","size":"100,100"}
-
-
-<div id=site>
-      <div id=left-sidebar class="debug">
-
-
-          
-      </div>
-
-          <div id=twine-area class="debug">
-
-              <div id="wrapper-outer">
-                    <div id="wrapper-inner">
-
-                    </div>
-              </div>
-          
-          </div>
-
-          <div id=drawing-area class="debug">
-              <canvas id="drawing-canvas"></canvas>
-
-              
-          </div>
-
-      
-      <div id=right-sidebar class="debug">
-          helloo
-
-          
-      </div>
-      
-  </div>
 
 
 :: StoryScript [script]
+
 $(window).on('sm.passage.shown', function(event, eventObject) {
     // Shown Passage object
   	

@@ -1,3 +1,6 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+
 body {
     background-color: white;
 }
@@ -6,25 +9,11 @@ body {
     background-color: aquamarine;
 }
 
-.ticket-overlay {
-    position:fixed;top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-
-
-    background: rgba(255, 252, 191, 0.6);
-}
-
 canvas {
     background-color: white;
 }
 
 tw-story {
-    width: 100vw;
-    height: 100vh;
 }
 
 
@@ -37,11 +26,12 @@ tw-passage {
 #site {
 display: grid;
 grid-template-columns: auto 1fr 4fr 1fr auto ;
-grid-template-rows: 3fr 2fr;
+grid-template-rows: 4fr 2fr;
 
-background-color: #B48C72;
-width: 100%;
-height: 100%;
+background-color: #A57455;
+
+width: 100vw;
+height: 100vh;
 }
 
 .debug {
@@ -49,17 +39,50 @@ border: 2px solid black;
 }
 
 #left-sidebar{
-grid-column: 1 ;
-grid-row: 1 / 3;
-width: 250px;
+    grid-column: 1 ;
+    grid-row: 1 / 3;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #593b28;
 }
 
 #right-sidebar {
-grid-column:  5;
-grid-row: 1 / 3;
-width: 250px;
+    grid-column:  5;
+    grid-row: 1 / 3;
+    width: 300px;
     justify-self: end;
+    
+    display: flex;
+    flex-direction: column;
+
+    background-color: #593b28;
+    border: 10px solid #2B1C12;
+    border-right: none;
 }
+
+.sidebar {
+    padding: 10px 0px;
+}
+
+.sidebar > hr {
+    border: none;
+    border-top: 5px solid #2B1C12;
+    margin: 0px 0;
+}
+
+.menu-header  {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-size: 1.5em;
+  font-style: italic;
+  color: #2B1C12;
+
+  align-self: flex-start;
+  padding-left: 10px;
+  
+}
+
 
 #drawing-area {
 grid-column: 3;
@@ -87,3 +110,4 @@ body {
     background-color: white;
     margin: 0;
 }
+
