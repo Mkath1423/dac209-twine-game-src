@@ -1,0 +1,88 @@
+:: StoryTitle
+dac209-maker-project
+
+
+:: StoryData
+{
+  "ifid": "C8C08B7C-4A84-45A0-BCC4-53A32D3986E7",
+  "format": "Snowman",
+  "format-version": "2.1.1",
+  "start": "Untitled Passage",
+  "zoom": 1
+}
+
+
+:: P2 {"position":"800,450","size":"100,100"}
+<div id="replace"></div>
+<%= `
+            <h2>Hello!</h2>
+            <p>and this is a silly thing.</p>
+        `
+%>
+
+<%
+  print("(Oh, oh. ");
+  print("Oh, oh)");
+%>
+[[P3]]
+
+
+:: P3 {"position":"800,575","size":"100,100"}
+[[P2]]
+
+
+:: Untitled Passage {"position":"800,325","size":"100,100"}
+This is the opening passage :)
+
+[[story-wrapper]]
+
+
+:: story-wrapper {"position":"925,325","size":"100,100"}
+
+
+<div id=site>
+      <div id=left-sidebar class="debug">
+
+
+          
+      </div>
+
+          <div id=twine-area class="debug">
+
+              <div id="wrapper-outer">
+                    <div id="wrapper-inner">
+
+                    </div>
+              </div>
+          
+          </div>
+
+          <div id=drawing-area class="debug">
+              <canvas id="drawing-canvas"></canvas>
+
+              
+          </div>
+
+      
+      <div id=right-sidebar class="debug">
+          helloo
+
+          
+      </div>
+      
+  </div>
+
+
+:: StoryScript [script]
+$(window).on('sm.passage.shown', function(event, eventObject) {
+    // Shown Passage object
+  	
+    console.log(eventObject.passage.name);
+  
+  if(eventObject.passage.name == "P2"){
+  	$("#replace").html(`
+            <h2>Hello!</h2>
+            <p>This was inserted from JavaScript.</p>
+        `);
+  }
+  });

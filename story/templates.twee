@@ -1,0 +1,13 @@
+:: Templates
+templates
+
+
+:: Templates1
+
+<template id="ink-bottle-template">
+    <div class="ink-bottle-layers">
+        <img class="ink-bottle" src="assets/inkbottle.png" alt="ink!">
+        <div class="tint"></div>
+        <img class="ink-bottle-cap" src="assets/inkbottle-cap.png" alt="ink!">
+    </div>
+</template>
